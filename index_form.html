@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-r from-cyan-500 to-green-500 font-serif h-full">
+    <form id="form" class="flex gap-2 lg:gap-3 justify-center flex-col mx-auto border border-black bg-slate-900 text-white px-3 md:px-10 py-2 md:py-6 rounded-lg w-60 md:w-1/2 lg:w-2/5 my-4">
+        <h1 class="text-center text-2xl md:text-4xl lg:text-5xl m-2 md:m-3">Registration Form</h1>
+        <div class="flex flex-col gap-4 w-5/6 lg:w-3/4">
+            <h3 class="px-1 lg:text-xl">Name</h3>
+            <input type="text" placeholder="Enter your name" id="name1" class="h-8 md:h-10 lg:h-12 text-black px-2 placeholder-black">
+            <div class="error text-red-500 text-xs"></div>
+        </div>
+
+        <div class="flex flex-col gap-4 w-5/6 lg:w-3/4">
+            <h3 class="mb-0 lg:text-xl">Email</h3>
+            <input type="text" placeholder="Enter your email" id="email" class="h-8 md:h-10 lg:h-12 text-black px-2 placeholder-black">
+            <div class="error text-red-500 text-xs"></div>
+        </div>
+        <div class="flex flex-col gap-4 w-5/6 lg:w-3/4">
+            <h3 class="mb-0 lg:text-xl">Password</h3>
+            <input type="password" placeholder="Enter your password"  id="password" class="h-8 md:h-10 lg:h-12 text-black px-2 placeholder-black">
+            <div class="error text-red-500 text-xs"></div>
+        </div>
+        <div class="flex flex-col gap-4 w-5/6 lg:w-3/4">
+            <h3 class="mb-0 lg:text-xl">DOB</h3>
+            <input type="date" id="date" class="h-8 md:h-10 lg:h-12 text-black px-2 placeholder-black">
+            <div class="error text-red-500 text-xs"></div>
+        </div>
+
+        <div class="flex flex-col gap-4 w-5/6 lg:w-3/4">
+            <h3 class="mb-0 lg:text-xl">Mobile Number</h3>
+            <input type="tel" placeholder="Contact number" id="mobile" class="h-8 md:h-10 lg:h-12 text-black px-2 placeholder-black">
+            <div class="error text-red-500 text-xs"></div>
+        </div>
+        <div class="flex flex-col gap-4 w-5/6 lg:w-3/4">
+            <h3 class="mb-0 lg:text-xl">Address</h3>
+            <textarea placeholder="Enter your address" id="address" class="lg:h-24 h-20  resize-none text-black px-2 placeholder-black"></textarea>
+            <div class="error text-red-500 text-xs"></div>
+        </div>
+        <div class="flex flex-col gap-4 w-5/6 lg:w-3/4">
+            <h3 class="mb-0 lg:text-xl">Pin code</h3>
+            <input type="tel" placeholder="Enter your pincode" id="pincode" class="h-8 md:h-10 lg:h-12 text-black px-2 placeholder-black">
+            <div class="error text-red-500 text-xs"></div>
+        </div>
+        <div class="flex flex-col gap-4 w-5/6 lg:w-3/4 placeholder-black">
+            <h3 class="mb-0 lg:text-xl">Country</h3>
+            <select id="country" class="lg:h-12 h-10 text-black px-2">
+                <option disabled selected>--Select your country--</option>
+                <option>Australia</option>
+                <option>France</option>
+                <option>India</option>
+                <option>UK</option>
+                <option>US</option>
+            </select>
+            <div class="error text-red-500 text-xs"></div>
+        </div>
+        <button id="submit" type="submit" class="bg-green-600 h-10 text-white font-medium text-sm lg:text-lg">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
